@@ -1,0 +1,13 @@
+public class BoletoGaleria extends Boleto {
+    private boolean accesoVip; 
+
+    public BoletoGaleria(int numero, boolean accesoVip) {
+        super(numero, 50.00); 
+        this.accesoVip = accesoVip;
+    }
+
+   
+    public String obtenerInformacion() {
+        return super.obtenerInformacion() + ", Tipo: Galería, VIP: " + (accesoVip ? "Sí" : "No");
+    }
+}

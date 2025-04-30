@@ -1,0 +1,13 @@
+public class BoletoPalco extends Boleto {
+    private String ubicacion; 
+
+    public BoletoPalco(int numero, String ubicacion) {
+        super(numero, 150.00); 
+        this.ubicacion = ubicacion;
+    }
+
+   
+    public String obtenerInformacion() {
+        return super.obtenerInformacion() + ", Tipo: Palco, Ubicación: " + ubicacion;
+    }
+}

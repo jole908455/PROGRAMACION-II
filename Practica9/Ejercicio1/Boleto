@@ -1,0 +1,24 @@
+public abstract class Boleto {
+    private int numero;
+    private double precio;
+
+    
+    public Boleto(int numero, double precio) {
+        this.numero = numero;
+        this.precio = precio;
+    }
+
+  
+    public String obtenerInformacion() {
+        return "Número: " + numero + ", Precio: " + precio;
+    }
+
+    
+    public int getNumero() {
+        return numero;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+}

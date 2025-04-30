@@ -1,0 +1,13 @@
+public class BoletoPlatea extends Boleto {
+    private int fila;
+
+    public BoletoPlatea(int numero, int fila) {
+        super(numero, 100.00); 
+        this.fila = fila;
+    }
+
+    
+    public String obtenerInformacion() {
+        return super.obtenerInformacion() + ", Tipo: Platea, Fila: " + fila;
+    }
+}
